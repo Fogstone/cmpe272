@@ -1,5 +1,5 @@
 <?php
-$myfile = file("./data/companycontacts.txt");
+$myfile = file("companycontacts.txt");
 
 
 ?>
