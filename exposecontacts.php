@@ -1,14 +1,14 @@
 <?php
-// Define a local array with contact information
-$contacts = [
-    "John Doe - john.doe@example.com",
-    "Jane Smith - jane.smith@example.com",
-    "Alice Johnson - alice.johnson@example.com"
-];
-?>
+// users_A.php
 
-<ul>
-    <?php foreach ($contacts as $contact) { ?>
-        <li><?php echo $contact; ?></li>
-    <?php } ?>
-</ul>
+header('Content-Type: application/json');
+
+// Local array of users for Company A
+$list_of_users_A = [
+    ['id' => 1, 'name' => 'Alice'],
+    ['id' => 2, 'name' => 'Bob']
+];
+
+// Return the user list as JSON
+echo json_encode($list_of_users_A);
+?>
